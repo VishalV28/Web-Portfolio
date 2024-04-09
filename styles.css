@@ -9,7 +9,7 @@
     padding:0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif ;
-    border: 0.5px solid white;
+    /* border: 0.5px solid white; */
     transition-duration: 200ms;
 }
 
@@ -20,7 +20,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 72px;
-
+    padding: 14px;
 }
 
 .darkerText{
@@ -133,7 +133,7 @@ section{
     gap: 14px;
     margin-right: auto;
     width: fit-content;
-    cursor: pointer;
+    text-decoration: none;
 }
 
 .outreach i{
@@ -143,6 +143,7 @@ section{
 
 .outreach:hover{
     opacity: 0.7;
+    cursor: pointer;
 }
 
 .projectContainer{
@@ -166,12 +167,14 @@ section{
     display: flex;
     flex-direction: column;
     gap: 14px;
+    flex: 1;
 }
 
 .project>div:last-child{
     aspect-ratio: 16/9;
     max-width: 30%;
     overflow: hidden;
+    border-radius: 8px;;
 }
 
 .project>div:last-child img{
